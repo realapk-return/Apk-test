@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(circle at 50% 0%, #1a0b2e 0%, #0a0a0a 70%);
+}
+
+/* iOS Glass Card */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Neon Accents */
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.neon-border {
+    border: 1px solid #ff00ff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+/* App List Grid */
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.app-card {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+}
+
+.app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px; /* iOS Icon curve */
+    margin-bottom: 10px;
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+}
+
+/* Buttons */
+.ios-btn {
+    background: linear-gradient(135deg, #00ffcc, #00b3ff);
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+}
+
+.ios-btn:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.7);
+}
+
+.admin-btn {
+    background: linear-gradient(135deg, #ff00ff, #9900ff);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+}
+
+/* Inputs */
+.ios-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+}
+.ios-input:focus {
+    border-color: #00ffcc;
+}
+
+/* Playstore Style Details */
+.screenshots-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+.screenshot-img {
+    height: 250px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Post APK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="ios-btn" style="width: auto; margin-bottom: 20px;" onclick="location.href='index.html'">← Home</button>
+
+    <div class="glass-panel neon-border">
+        <h2 class="neon-text" style="margin-bottom: 20px;">Post New Mod APK</h2>
+        
+        <form id="addAppForm">
+            <input type="text" id="appName" class="ios-input" placeholder="App Name (e.g. Anime Mod)" required>
+            <input type="text" id="appVersion" class="ios-input" placeholder="Version (e.g. v1.5.2)" required>
+            <input type="text" id="appSize" class="ios-input" placeholder="Size (e.g. 50 MB)" required>
+            <input type="url" id="appIcon" class="ios-input" placeholder="Icon Image URL" required>
+            <input type="url" id="appLink" class="ios-input" placeholder="Direct Download Link (Mediafire/Mega)" required>
+            <textarea id="appDesc" class="ios-input" placeholder="Mod Features & Description..." rows="4" required></textarea>
+            
+            <button type="submit" class="ios-btn admin-btn">Publish App</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

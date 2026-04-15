@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="ios-btn" style="width: auto; margin-bottom: 20px;" onclick="location.href='index.html'">← Back</button>
+
+    <div class="glass-panel" style="display: flex; gap: 20px; align-items: center;">
+        <img id="appIcon" src="" class="app-icon neon-border" style="width: 100px; height: 100px;">
+        <div>
+            <h2 id="appName" class="neon-text">Loading...</h2>
+            <p id="appMeta" style="color: #888; margin-top: 5px;"></p>
+        </div>
+    </div>
+
+    <div class="glass-panel">
+        <h3 class="neon-text" style="margin-bottom: 10px;">Screenshots</h3>
+        <div class="screenshots-container">
+            <img src="https://via.placeholder.com/150x250/222/00ffcc?text=Preview+1" class="screenshot-img">
+            <img src="https://via.placeholder.com/150x250/222/ff00ff?text=Preview+2" class="screenshot-img">
+        </div>
+    </div>
+
+    <div class="glass-panel">
+        <h3 style="margin-bottom: 10px;">About this Mod</h3>
+        <p id="appDesc" style="color: #ccc; line-height: 1.6;"></p>
+    </div>
+
+    <div style="position: fixed; bottom: 20px; left: 20px; right: 20px;">
+        <p id="timer" class="neon-text" style="display: none;"></p>
+        <button id="downloadBtn" class="ios-btn" style="padding: 18px; font-size: 1.1rem;">Download APK</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
