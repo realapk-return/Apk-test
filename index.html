@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="glass-panel" style="display: flex; justify-content: space-between; align-items: center;">
-        <h1 class="neon-text">Mod Store</h1>
-        <button class="ios-btn admin-btn" style="width: auto;" onclick="location.href='admin.html'">Admin</button>
+    <h1>Apps</h1>
+    
+    <input type="text" id="searchInput" class="search-bar" placeholder="Games, Apps, Tools...">
+
+    <div class="category-list">
+        <button class="cat-chip active" onclick="setCategory('All', this)">All</button>
+        <button class="cat-chip" onclick="setCategory('Tools', this)">Tools</button>
+        <button class="cat-chip" onclick="setCategory('Games', this)">Games</button>
+        <button class="cat-chip" onclick="setCategory('Entertainment', this)">Entertainment</button>
+        <button class="cat-chip" onclick="setCategory('UI Mods', this)">UI Mods</button>
     </div>
 
-    <div class="app-grid" id="appGrid">
+    <div id="appList">
         </div>
 
     <script src="script.js"></script>

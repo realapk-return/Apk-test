@@ -7,32 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="ios-btn" style="width: auto; margin-bottom: 20px;" onclick="location.href='index.html'">← Back</button>
-
-    <div class="glass-panel" style="display: flex; gap: 20px; align-items: center;">
-        <img id="appIcon" src="" class="app-icon neon-border" style="width: 100px; height: 100px;">
-        <div>
-            <h2 id="appName" class="neon-text">Loading...</h2>
-            <p id="appMeta" style="color: #888; margin-top: 5px;"></p>
-        </div>
+    <div style="color: #0a84ff; margin-bottom: 20px; font-weight: 500; cursor: pointer;" onclick="location.href='index.html'">
+        ‹ Search
     </div>
 
-    <div class="glass-panel">
-        <h3 class="neon-text" style="margin-bottom: 10px;">Screenshots</h3>
-        <div class="screenshots-container">
-            <img src="https://via.placeholder.com/150x250/222/00ffcc?text=Preview+1" class="screenshot-img">
-            <img src="https://via.placeholder.com/150x250/222/ff00ff?text=Preview+2" class="screenshot-img">
-        </div>
+    <div class="details-header">
+        <img id="appIcon" src="" class="details-icon">
+        <div style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+                <h2 id="appName">Loading...</h2>
+                <p id="appMeta" class="text-muted" style="margin-top: 4px;"></p>
+            </div>
+            </div>
     </div>
 
-    <div class="glass-panel">
-        <h3 style="margin-bottom: 10px;">About this Mod</h3>
-        <p id="appDesc" style="color: #ccc; line-height: 1.6;"></p>
+    <hr style="border: none; border-top: 1px solid #2c2c2e; margin-bottom: 20px;">
+
+    <h3 style="margin-bottom: 12px; font-size: 20px;">Preview</h3>
+    <div class="screenshots">
+        <img src="https://via.placeholder.com/200x350/1c1c1e/fff?text=SS+1">
+        <img src="https://via.placeholder.com/200x350/1c1c1e/fff?text=SS+2">
     </div>
 
-    <div style="position: fixed; bottom: 20px; left: 20px; right: 20px;">
-        <p id="timer" class="neon-text" style="display: none;"></p>
-        <button id="downloadBtn" class="ios-btn" style="padding: 18px; font-size: 1.1rem;">Download APK</button>
+    <div class="ios-card" style="margin-top: 20px;">
+        <p id="appDesc" style="color: #e5e5ea; line-height: 1.5; font-size: 15px;"></p>
+    </div>
+
+    <div style="position: fixed; bottom: 0; left: 0; right: 0; padding: 20px; background: rgba(28,28,30,0.9); backdrop-filter: blur(10px);">
+        <p id="timer" style="display: none;"></p>
+        <button id="downloadBtn" class="btn-primary">GET</button>
     </div>
 
     <script src="script.js"></script>
